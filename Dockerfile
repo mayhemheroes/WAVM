@@ -12,7 +12,7 @@ RUN cp ./Examples/*.wasm /wavmCorpus
 RUN wget https://github.com/mdn/webassembly-examples/blob/master/other-examples/simple.wasm
 RUN wget https://github.com/mdn/webassembly-examples/blob/master/other-examples/simple-name-section.wasm
 RUN wget https://github.com/mdn/webassembly-examples/blob/master/other-examples/table.wasm
-RUN wget https://github.com/mdn/webassembly-examples/blob/master/other-examples/table2.wasm
+#RUN wget https://github.com/mdn/webassembly-examples/blob/master/other-examples/table2.wasm
 RUN mv *.wasm /wavmCorpus
 
 

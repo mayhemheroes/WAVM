@@ -6,7 +6,7 @@ RUN git clone  https://github.com/WAVM/WAVM.git
 WORKDIR /WAVM
 RUN cmake -DCMAKE_C_COMPILER=afl-clang -DCMAKE_CXX_COMPILER=afl-clang++ .
 RUN make
-RUN Make install
+RUN make install
 RUN mkdir /wavmCorpus
 RUN cp ./Examples/*.wasm /wavmCorpus
 RUN wget https://github.com/mdn/webassembly-examples/blob/master/other-examples/simple.wasm

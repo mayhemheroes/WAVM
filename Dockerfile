@@ -13,7 +13,7 @@ RUN wget https://github.com/mdn/webassembly-examples/blob/master/other-examples/
 RUN wget https://github.com/mdn/webassembly-examples/blob/master/other-examples/simple-name-section.wasm
 RUN wget https://github.com/mdn/webassembly-examples/blob/master/other-examples/table.wasm
 RUN wget https://github.com/mdn/webassembly-examples/blob/master/other-examples/table2.wasm
-RUN mv *.wasm /wasmCorpus
+RUN mv *.wasm /wavmCorpus
 
 
 ENTRYPOINT  ["afl-fuzz", "-m", "2048", "-i", "/wavmCorpus", "-o", "/wavmOut"]

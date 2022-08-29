@@ -9,7 +9,7 @@ project: baptistapedro/wavm-fuzz
 target: wavm-fuzz-latest
 
 # Base image to run the binary in.
-image: index.docker.io/pedbap/wavm-fuzz@sha256:929efe012d2f95f366180ae5d25cf254352e254ece5adfeeefac172555cc251b
+image: pedbap/wavm-fuzz
 
 # Turns on extra test case processing (completing a run will take longer)
 advanced_triage: false
@@ -40,6 +40,3 @@ cmds:
     ## that length will be truncated. Be very careful about increasing this
     ## limit as it can severely affect your fuzzer performance.
     # max_length: 8192
-
-testsuite:
-  - https://mayhem.forallsecure.com/baptistapedro/wavm-fuzz/wavm-fuzz-latest/testsuite.tar
